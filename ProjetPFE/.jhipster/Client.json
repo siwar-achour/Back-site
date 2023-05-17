@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20230403214501",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "client",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Client",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "admin",
+      "otherEntityRelationshipName": "client",
+      "relationshipName": "admin",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

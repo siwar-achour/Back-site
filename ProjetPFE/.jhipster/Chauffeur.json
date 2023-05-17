@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20230403214500",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "chauffeur",
+  "fields": [
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Chauffeur",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "admin",
+      "otherEntityRelationshipName": "chauffeur",
+      "relationshipName": "admin",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20230403214502",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "admin",
+  "fields": [
+    {
+      "fieldName": "roleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "not an ignored comment",
+  "jpaMetamodelFiltering": false,
+  "name": "Admin",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "chauffeur",
+      "otherEntityRelationshipName": "admin",
+      "relationshipName": "chauffeur",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "admin",
+      "relationshipName": "client",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
